@@ -43,7 +43,6 @@ pipeline {
                     docker.withRegistry('', 'docker') {
                         sh '''
                             docker build -t blujaytech/javamavenapp:v1 .
-                            docker push blujaytech/javamavenapp:v1
                         '''
                     }
                 }
